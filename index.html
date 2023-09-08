@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? family= Poppins:wght@300 & display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="icons8-calculator-bubbles-144.png" type="calc">
-    
-    
+
+
     <title>Calculadora</title>
 </head>
+
 <body>
     <div>
         <input class="display">
@@ -34,33 +37,34 @@
         <button class="black-button Z" onclick="adicionarCaracter('0')">0</button>
         <button class="black-button" onclick="adicionarCaracter('.')">.</button>
 
-        
+
 
     </div>
-    
+
 </body>
 <script>
 
-function adicionarCaracter(caracter){
-    const valordisplay = document.querySelector(".display").value
+    function adicionarCaracter(caracter) {
+        const valordisplay = document.querySelector(".display").value
 
-document.querySelector(".display").value = valordisplay + caracter
-    
-}
-function limpatela(){
-    document.querySelector(".display").value=""
-}
+        document.querySelector(".display").value = valordisplay + caracter
 
-function calcular(){
-    const valordisplay = document.querySelector(".display").value
+    }
+    function limpatela() {
+        document.querySelector(".display").value = ""
+    }
 
-    document.querySelector(".display").value = eval(valordisplay)
+    function calcular() {
+        const valordisplay = document.querySelector(".display").value
 
-}
-function inverternumero(){
-    const valordisplay = document.querySelector(".display").value
-    document.querySelector(".display").value = valordisplay * -1
-}
+        document.querySelector(".display").value = eval(valordisplay)
+
+    }
+    function inverternumero() {
+        const valordisplay = document.querySelector(".display").value
+        document.querySelector(".display").value = valordisplay * -1
+    }
 
 </script>
+
 </html>
