@@ -5,7 +5,8 @@ This is a simple calculator developed using HTML, CSS and JavaScript. With this 
 
 *Clone or download this repository to your computer.<br>
 *Copy code
-git clone https://github.com/seu-usuario/calculadora.git<br>
+git clone https://github.com/camillalarissa/Calculadora-html-css-java
+
 *Open the index.html file in your web browser.<br>
 
 Use the numeric and operation buttons to perform calculations.<br>
